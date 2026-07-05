@@ -3,82 +3,459 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sinh Cơ Học Tennis Tương Tác</title>
+<title>Sinh Cơ Học Tennis - Cẩm Nang 2026</title>
+<meta name="description" content="Khám phá 10+ công thức sinh cơ học cốt lõi từ Cẩm Nang Tennis Hiện Đại 2026">
 <style>
-:root{--p:#2563eb;--s:#7c3aed;--bg:#f8fafc;--c:#fff;--t:#1e293b;--m:#64748b;--b:#e2e8f0;--sh:0 1px 3px rgba(0,0,0,.1);--r:12px}
+:root{--p:#2563eb;--s:#7c3aed;--bg:#f8fafc;--c:#fff;--t:#1e293b;--m:#64748b;--b:#e2e8f0;}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--t);line-height:1.6}
+body{font-family:sans-serif;background:var(--bg);color:var(--t);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:60px 0;text-align:center}
 header h1{font-size:2.5rem;font-weight:800;margin-bottom:10px}
-header p{font-size:1.25rem;opacity:.95}
-nav{background:var(--c);border-bottom:1px solid var(--b);padding:15px 0;position:sticky;top:0;z-index:100;box-shadow:var(--sh)}
+nav{background:var(--c);border-bottom:1px solid var(--b);padding:15px 0;position:sticky;top:0;z-index:100}
 nav .container{display:flex;justify-content:center;gap:30px;flex-wrap:wrap}
 nav a{color:var(--t);text-decoration:none;font-weight:500;padding:8px 16px;border-radius:6px}
-nav a:hover{background:var(--bg);color:var(--p)}
 main{padding:60px 0}
 section{margin-bottom:80px}
-section h2{font-size:2rem;font-weight:700;margin-bottom:20px;display:flex;align-items:center;gap:12px}
-section h2 .b{font-size:.875rem;padding:4px 12px;background:var(--p);color:#fff;border-radius:20px;font-weight:600}
-section p{color:var(--m);margin-bottom:30px;font-size:1.125rem}
+section h2{font-size:2rem;font-weight:700;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:24px}
-.card{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:24px;box-shadow:var(--sh);transition:all .3s}
-.card:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.1)}
-.card h3{font-size:1.25rem;font-weight:600;margin-bottom:8px}
-.card .vn{font-size:1.125rem;color:var(--p);font-weight:600;margin-bottom:12px}
-.card .d{color:var(--m);margin-bottom:16px;font-size:.9375rem}
-.card .tags{display:flex;gap:8px;flex-wrap:wrap}
+.card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:24px}
+.card h3{font-size:1.25rem;font-weight:600;margin-bottom:12px;color:var(--p)}
+.card .vn{font-size:1.125rem;color:var(--s);font-weight:600;margin-bottom:12px}
+.card .formula{background:#f1f5f9;padding:12px;border-radius:8px;margin:12px 0;font-family:monospace;font-size:1.125rem;text-align:center;overflow-x:auto}
+.card .description{color:var(--m);margin-bottom:16px;font-size:.9375rem}
+.card .tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
 .card .tag{background:var(--bg);padding:4px 10px;border-radius:4px;font-size:.8125rem;color:var(--m)}
-.calc{background:#f1f5f9;border-radius:var(--r);padding:40px;margin:40px 0}
-.net{background:var(--c);border:1px solid var(--b);border-radius:var(--r);padding:40px}
+.card .application{font-size:.9375rem;color:var(--t);margin-top:16px;padding-top:16px;border-top:1px solid var(--b)}
+.calc{background:#f1f5f9;border-radius:12px;padding:40px;margin:40px 0}
 .netgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
 .netcard{padding:20px;border:1px solid var(--b);border-radius:8px}
 .netcard:hover{background:var(--bg)}
 .netcard h4{font-size:1rem;font-weight:600;margin-bottom:8px}
 .netcard p{font-size:.875rem;color:var(--m);margin-bottom:12px}
 .netcard a{color:var(--p);text-decoration:none;font-weight:500}
-.netcard a:hover{text-decoration:underline}
 footer{background:var(--c);border-top:1px solid var(--b);padding:40px 0;text-align:center;color:var(--m)}
 footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin:20px 0}
-footer a{color:var(--m);text-decoration:none}
-footer a:hover{color:var(--p)}
-.lt{position:fixed;top:20px;right:20px;z-index:1000}
-.lt a{display:inline-block;padding:8px 16px;background:#fff;border:1px solid var(--b);border-radius:6px;text-decoration:none;color:var(--t);font-weight:500;box-shadow:var(--sh)}
-@media(max-width:768px){header h1{font-size:1.75rem}.grid{grid-template-columns:1fr}nav .container{gap:15px}}
+@media(max-width:768px){header h1{font-size:1.75rem}.grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class=lt><a href=#>Tiếng Việt</a></div>
-<header><div class=container><h1>Sinh Cơ Học Tennis Tương Tác</h1><p>Khám phá 10 công thức cốt lõi chi phối hiệu suất quần vợt</p></div></header>
-<nav><div class=container><a href=#f>10 Công Thức</a><a href=#a>Giới Thiệu</a><a href=#n>Mạng Lưới</a><a href=#c>Liên Hệ</a></div></nav>
+<header><div class=container>
+<h1>Sinh Cơ Học Tennis Tương Tác</h1>
+<p>Cẩm Nang Tennis Hiện Đại 2026 - 10+ Công Thức Cốt Lõi</p>
+</div></header>
+<nav><div class=container>
+<a href="#det">DET</a>
+<a href="#formulas">Công Thức</a>
+<a href="#chapters">Chương</a>
+<a href="#network">Mạng Lưới</a>
+<a href="#contact">Liên Hệ</a>
+</div></nav>
 <main><div class=container>
-<section id=a><h2><span class=b>📊</span> Về Dự Án</h2>
-<p>Đây là ứng dụng web cung cấp <strong>10 công thức sinh cơ học cốt lõi</strong> cho tennis.</p></section>
-<section id=f><h2><span class=b>🔢</span> 10 Công Thức Sinh Cơ Học</h2>
+
+<section id="intro">
+<h2>📖 Lời Mở Đầu</h2>
+<p>Cuốn cẩm nang này ra đời từ một câu hỏi đơn giản nhưng sâu sắc: <strong>"Tại sao những tay vợt nhỏ con lại có thể giao bóng mạnh hơn những người có thể hình vạm vỡ?"</strong></p>
+<p>Câu trả lời không nằm ở cơ bắp, mà nằm ở <strong>vật lý học, thần kinh học và nghệ thuật truyền dẫn năng lượng</strong>.</p>
+<p><strong>Triết lý xuyên suốt:</strong> "Năng lượng không được tạo ra từ sức mạnh, mà được giải phóng từ cấu trúc."</p>
+</section>
+
+<section id="det">
+<h2>⚡ Dòng Chảy Năng Lượng Động (DET)</h2>
+<p><strong>Triết lý:</strong> Chuyển đổi tư duy từ "đánh bóng bằng tay" sang "truyền dẫn năng lượng toàn phần" — từ lòng bàn chân đến đầu vợt.</p>
+<p>Năng lượng không tự sinh ra từ cơ bắp tay. Nó được "mượn" từ lực phản chấn của Trái Đất (Ground Reaction Force), khuếch đại qua hệ thống cơ-mạc-gân, và dẫn truyền qua hệ mạc đến đầu vợt.</p>
+
 <div class=grid>
-<div class=card><h3>Inertial Transmission Index</h3><div class=vn>Chỉ Số Truyền Tải Quán Tính</div><p class=d>Đo lường khả năng truyền tải động lượng từ cơ thể đến vợt và bóng.</p><div class=tags><span class=tag>Động lực học</span><span class=tag>Quán tính</span></div></div>
-<div class=card><h3>Elastic Energy</h3><div class=vn>Năng Lượng Đàn Hồi</div><p class=d>Tính toán năng lượng được lưu trữ và giải phóng từ dây vợt.</p><div class=tags><span class=tag>Năng lượng</span><span class=tag>Dây vợt</span></div></div>
-<div class=card><h3>Torque Calculations</h3><div class=vn>Mô-men Xoắn</div><p class=d>Phân tích lực xoắn sinh ra trong các cú đánh.</p><div class=tags><span class=tag>Lực xoắn</span><span class=tag>Spin</span></div></div>
-<div class=card><h3>Ball Heaviness Index</h3><div class=vn>Độ Nặng Của Bóng</div><p class=d>Đánh giá cảm giác nặng của bóng dựa trên tốc độ, spin và mặt sân.</p><div class=tags><span class=tag>Chiến thuật</span><span class=tag>Mặt sân</span></div></div>
-<div class=card><h3>Racket Moment of Inertia</h3><div class=vn>Mô-men Quán Tính Vợt</div><p class=d>Tính toán sự kháng cự của vợt đối với sự thay đổi chuyển động.</p><div class=tags><span class=tag>Vợt</span><span class=tag>Ổn định</span></div></div>
-<div class=card><h3>Racket Weight Distribution</h3><div class=vn>Phân Bổ Trọng Lượng Vợt</div><p class=d>Phân tích sự phân bố trọng lượng dọc theo khung vợt.</p><div class=tags><span class=tag>Trọng lượng</span><span class=tag>Cân bằng</span></div></div>
-<div class=card><h3>Stiffness and Efficiency</h3><div class=vn>Độ Cứng & Hiệu Suất</div><p class=d>Đánh giá mối quan hệ giữa độ cứng và hiệu suất truyền tải năng lượng.</p><div class=tags><span class=tag>Độ cứng</span><span class=tag>Hiệu suất</span></div></div>
-<div class=card><h3>Wrist Stability</h3><div class=vn>Độ Vững Chắc Cổ Tay</div><p class=d>Tính toán khả năng ổn định của cổ tay trong các tình huống đánh bóng.</p><div class=tags><span class=tag>Cổ tay</span><span class=tag>Kỹ thuật</span></div></div>
-<div class=card><h3>Movement Efficiency</h3><div class=vn>Hiệu Suất Di Chuyển</div><p class=d>Phân tích hiệu quả của các chuyển động trên sân.</p><div class=tags><span class=tag>Di chuyển</span><span class=tag>Vị trí</span></div></div>
-<div class=card><h3>Conservation of Angular Momentum</h3><div class=vn>Bảo Toàn Mô-men Động Lượng</div><p class=d>Áp dụng nguyên lý vật lý cơ bản vào kỹ thuật tennis.</p><div class=tags><span class=tag>Vật lý</span><span class=tag>Động lượng</span></div></div>
-</div></section>
-<section><div class=calc><h2><span class=b>🧮</span> Máy Tính Sinh Cơ Học</h2><p>Chúng tôi đang phát triển các công cụ tính toán tương tác. Hãy quay lại sau!</p></div></section>
-<section id=n><h2><span class=b>🌐</span> Mạng Lưới Tennis</h2>
+<div class=card>
+<h3>Mô Hình Ba Nguồn Năng Lượng</h3>
+<div class=vn>Ba Kênh Năng Lượng DET</div>
+<div class=formula>E_total = F(t)·v(t) + V_skin(t)·I_skin(t) + p(t)·A(t)</div>
+<div class=description><strong>Năng lượng Cơ học (F·v):</strong> Lực co rút của các bó cơ lớn — đùi, mông, lưng, nhân với vận tốc co cơ.<br><strong>Năng lượng Thần kinh (V·I):</strong> Cường độ xung điện từ hệ thần kinh trung ương kích hoạt các đơn vị vận động.<br><strong>Năng lượng Sóng tiếp xúc (p·A):</strong> Áp lực tiếp xúc của lòng bàn chân với mặt sân, tạo ra lực phản chấn GRF.</div>
+<div class=tags><span class=tag>DET</span><span class=tag>Năng lượng</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Phối hợp ba kênh nhịp nhàng: thần kinh kích hoạt sớm → áp lực chân nền tảng → lực cơ bắp bùng nổ tại điểm chạm bóng.</div>
+</div>
+
+<div class=card>
+<h3>Phương Trình DET Master</h3>
+<div class=vn>Tích Phân Năng Lượng Tổng</div>
+<div class=formula>E_total = ∫[t₀→t_f] { F(t)·v(t) + V_skin(t)·I_skin(t) + p(t)·A(t) } dt</div>
+<div class=description>Tổng năng lượng được truyền vào cú đánh là tích phân theo thời gian của ba kênh: cơ học, thần kinh điện sinh lý, và áp lực tiếp xúc.</div>
+<div class=tags><span class=tag>DET</span><span class=tag>Tích phân</span><span class=tag>Nâng cao</span></div>
+<div class=application><strong>Ứng dụng:</strong> Mọi thứ đều biến đổi theo thời gian (t). Kỹ thuật hoàn hảo là phối hợp nhịp nhàng, không phải đẩy ba kênh lên mức tối đa cùng lúc.</div>
+</div>
+
+<div class=card>
+<h3>The 92% Rule</h3>
+<div class=vn>Quy Tắc 92%</div>
+<div class=formula>η = E_released / E_stored</div>
+<div class=description>Hệ số hiệu suất truyền tải. Dây ruột tự nhiên η ~ 0.95; dây Polyester η ~ 0.80; Cơ thể huấn luyện tốt η ~ 0.88-0.92.</div>
+<div class=tags><span class=tag>Hiệu suất</span><span class=tag>Rò rỉ</span><span class=tag>DET</span></div>
+<div class=application><strong>Ứng dụng:</strong> Giảm thiểu sự tiêu tán năng lượng. Bất kỳ sự gián đoạn nào trong chuỗi đều gây ra "rò rỉ năng lượng".</div>
+</div>
+
+<div class=card>
+<h3>Cấu Trúc Hệ Mạc</h3>
+<div class=vn>Fascial Tensegrity</div>
+<div class=formula>E_elastic = ½ · k · (Δx)²</div>
+<div class=description>Hệ mạc (fascia) là mạng lưới mô liên kết bao quanh toàn bộ cơ bắp, gân và xương. Có thể lưu trữ và giải phóng năng lượng đàn hồi theo nhiều hướng.</div>
+<div class=tags><span class=tag>Hệ mạc</span><span class=tag>Biotensegrity</span><span class=tag>DET</span></div>
+<div class=application><strong>Kỹ thuật Xoay Chéo (X-Factor):</strong> Góc lệch 45-55° tích lũy tối đa năng lượng. Tăng biên độ 20% → năng lượng tăng 44%.</div>
+</div>
+
+<div class=card>
+<h3>Định Lượng Kỹ Thuật</h3>
+<div class=vn>Khóa Cấu Trúc Tại Điểm Chạm</div>
+<div class=formula>K_wrist = ΔF / Δθ</div>
+<div class=description>Tại khoảnh khắc bóng chạm dây, cơ thể phải chuyển từ trạng thái "mềm mại" sang "cứng nhắc như thép" trong vòng 0.005 giây.</div>
+<div class=tags><span class=tag>Cổ tay</span><span class=tag>Kỹ thuật</span><span class=tag>DET</span></div>
+<div class=application><strong>Ngưỡng Elite:</strong> K_wrist ≥ 0.85. Nếu K_wrist < 0.5: cổ tay bị lật, rò rỉ năng lượng, nguy cơ chấn thương TFCC.</div>
+</div>
+</div>
+</section>
+
+<section id="formulas">
+<h2>🔢 10 Công Thức Sinh Cơ Học Cốt Lõi</h2>
+
+<div class=grid>
+<div class=card>
+<h3>Inertial Transmission Index</h3>
+<div class=vn>Chỉ Số Truyền Tải Quán Tính</div>
+<div class=formula>ITI = (I_racket · ω) / (m_ball · v_ball)</div>
+<div class=description>Đo lường khả năng truyền tải động lượng từ cơ thể đến vợt và bóng. Giúp tối ưu hóa chuỗi chuyển động.</div>
+<div class=tags><span class=tag>Động lực học</span><span class=tag>Quán tính</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Tối ưu chuỗi động lực: chân → hông → vai → tay → vợt.</div>
+</div>
+
+<div class=card>
+<h3>Elastic Energy</h3>
+<div class=vn>Năng Lượng Đàn Hồi</div>
+<div class=formula>E_elastic = ½ · k · (Δx)²</div>
+<div class=description>Tính toán năng lượng được lưu trữ và giải phóng từ dây vợt và khung vợt.</div>
+<div class=tags><span class=tag>Năng lượng</span><span class=tag>Dây vợt</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Ruột tự nhiên: đàn hồi tốt. Polyester: kiểm soát tốt.</div>
+</div>
+
+<div class=card>
+<h3>Torque Calculations</h3>
+<div class=vn>Mô-men Xoắn</div>
+<div class=formula>τ = r × F · sin(θ)</div>
+<div class=description>Phân tích lực xoắn sinh ra trong các cú đánh. Quan trọng cho việc tạo ra spin.</div>
+<div class=tags><span class=tag>Lực xoắn</span><span class=tag>Spin</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Tối ưu góc đánh và lực để tạo ra spin tối đa.</div>
+</div>
+
+<div class=card>
+<h3>Ball Heaviness Index</h3>
+<div class=vn>Độ Nặng Của Bóng</div>
+<div class=formula>BHI = (m_ball · v²) / (2 · g · h)</div>
+<div class=description>Đánh giá cảm giác nặng của bóng dựa trên tốc độ, spin và loại mặt sân.</div>
+<div class=tags><span class=tag>Chiến thuật</span><span class=tag>Mặt sân</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Điều chỉnh chiến thuật dựa trên độ nặng cảm nhận.</div>
+</div>
+
+<div class=card>
+<h3>Racket Moment of Inertia</h3>
+<div class=vn>Mô-men Quán Tính Vợt</div>
+<div class=formula>I_racket = ∫[0→L] ρ(x) · x² dx</div>
+<div class=description>Tính toán sự kháng cự của vợt đối với sự thay đổi chuyển động.</div>
+<div class=tags><span class=tag>Vợt</span><span class=tag>Ổn định</span><span class=tag>Nâng cao</span></div>
+<div class=application><strong>Ứng dụng:</strong> Dán chì ở 12h: ΔI = m·x². 5g tại 68cm: ΔI ≈ 2,312 kg·cm².</div>
+</div>
+
+<div class=card>
+<h3>Racket Weight Distribution</h3>
+<div class=vn>Phân Bổ Trọng Lượng Vợt</div>
+<div class=formula>m_handle = m_total - m_head</div>
+<div class=description>Phân tích sự phân bố trọng lượng dọc theo khung vợt.</div>
+<div class=tags><span class=tag>Trọng lượng</span><span class=tag>Cân bằng</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Head Heavy: lực xuyên phá. Head Light: linh hoạt.</div>
+</div>
+
+<div class=card>
+<h3>Stiffness and Efficiency</h3>
+<div class=vn>Độ Cứng & Hiệu Suất</div>
+<div class=formula>k = (E · A) / L</div>
+<div class=description>Mối quan hệ giữa độ cứng của vợt/dây và hiệu suất truyền tải.</div>
+<div class=tags><span class=tag>Độ cứng</span><span class=tag>Hiệu suất</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Ruột tự nhiên (E≈2.5-3.5 GPa): η≈0.92-0.95.</div>
+</div>
+
+<div class=card>
+<h3>Wrist Stability</h3>
+<div class=vn>Độ Vững Chắc Cổ Tay</div>
+<div class=formula>K_wrist = ΔF / Δθ</div>
+<div class=description>Khả năng ổn định của cổ tay trong các tình huống đánh bóng khắc nghiệt.</div>
+<div class=tags><span class=tag>Cổ tay</span><span class=tag>Kỹ thuật</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Ngưỡng Elite: K_wrist ≥ 0.85. < 0.5: nguy cơ chấn thương TFCC.</div>
+</div>
+
+<div class=card>
+<h3>Movement Efficiency</h3>
+<div class=vn>Hiệu Suất Di Chuyển</div>
+<div class=formula>ME = (Distance / Energy) × 100%</div>
+<div class=description>Phân tích hiệu quả của các chuyển động trên sân.</div>
+<div class=tags><span class=tag>Di chuyển</span><span class=tag>Vị trí</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Tối ưu hóa bộ pháp để di chuyển nhanh hơn.</div>
+</div>
+
+<div class=card>
+<h3>Conservation of Angular Momentum</h3>
+<div class=vn>Bảo Toàn Mô-men Động Lượng</div>
+<div class=formula>L = I · ω = constant</div>
+<div class=description>Áp dụng nguyên lý vật lý cơ bản vào kỹ thuật tennis.</div>
+<div class=tags><span class=tag>Vật lý</span><span class=tag>Động lượng</span><span class=tag>Cơ bản</span></div>
+<div class=application><strong>Ứng dụng:</strong> Proximal-to-Distal Sequencing: hông → vai → tay → vợt.</div>
+</div>
+</div>
+</section>
+
+<section id="advanced">
+<h2>🎯 Công Thức Nâng Cao</h2>
+
+<div class=grid>
+<div class=card>
+<h3>Dynamic Inertia Transfer (DIT)</h3>
+<div class=vn>Chỉ Số Dịch Chuyển Quán Tính Động</div>
+<div class=formula>DIT = (I_racket · Δω) / m_player</div>
+<div class=description>Hiệu quả truyền quán tính từ vợt vào bóng, chuẩn hóa theo khối lượng.</div>
+<div class=tags><span class=tag>DIT</span><span class=tag>Quán tính</span></div>
+<div class=application><strong>Phân hạng:</strong> Thấp (<0.6), Trung bình (0.6-0.8), Cao (0.8-1.0), Elite (>1.0).</div>
+</div>
+
+<div class=card>
+<h3>Neuro-Kinetic Fusion (NKF)</h3>
+<div class=vn>Chỉ Số Đồng Bộ Thần Kinh-Động Lực</div>
+<div class=formula>σ_sync = [1 / N(N-1)] · ∑[i≠j] Corr(N_i(t), N_j(t))</div>
+<div class=description>Thước đo khả năng não bộ điều khiển "dàn nhạc cơ thể".</div>
+<div class=tags><span class=tag>NKF</span><span class=tag>Thần kinh</span></div>
+<div class=application><strong>Ngưỡng:</strong> <0.70: rời rạc. ≥0.92: Flow State ("đánh như không đánh").</div>
+</div>
+
+<div class=card>
+<h3>Kinetic Chain Timing</h3>
+<div class=vn>Nhịp Điệu Chuỗi Động Lực</div>
+<div class=formula>F_total(t) = ∑[k=1→K] A_k · exp(-(t - t_k,i)² / (2·σ_k²))</div>
+<div class=description>Các "ngọn sóng" lực sinh ra từ các nhóm cơ cộng dồn theo thời gian.</div>
+<div class=tags><span class=tag>Timing</span><span class=tag>Chuỗi động lực</span></div>
+<div class=application><strong>Ứng dụng:</strong> Cú đánh lý tưởng: các sóng cộng dồn thành một đỉnh nhọn tại t_impact.</div>
+</div>
+
+<div class=card>
+<h3>Electromechanical Delay (EMD)</h3>
+<div class=vn>Khoảng Trễ Điện-Cơ</div>
+<div class=formula>M_i(t) = α_i · [1 - exp(-β_i · N_i(t - Δt))]</div>
+<div class=description>Khoảng thời gian giữa lúc não phát lệnh "Đánh!" và lúc cơ bắp tạo ra lực.</div>
+<div class=tags><span class=tag>EMD</span><span class=tag>Thần kinh</span></div>
+<div class=application><strong>Giảm EMD:</strong> Split-Step bù trừ trễ: nhảy nhẹ khi đối thủ chạm bóng.</div>
+</div>
+
+<div class=card>
+<h3>Internal Rotation Acceleration</h3>
+<div class=vn>Gia Tốc Xoay Trong</div>
+<div class=formula>α_IR = Δω_IR / Δt_IR</div>
+<div class=description>Xoay trong của xương cánh tay là chuyển động nhanh nhất trong thể thao. Δω_IR ≈ 2,800°/s, Δt_IR ≈ 0.025s → α_IR ≈ 112,000°/s².</div>
+<div class=tags><span class=tag>IR</span><span class=tag>Xoay trong</span></div>
+<div class=application><strong>Cảnh báo:</strong> τ_L = I_humerus · α_IR. Nếu gồng cứng, có thể gây rách chóp xoay vai.</div>
+</div>
+
+<div class=card>
+<h3>Vertical GRF</h3>
+<div class=vn>Lực Phản Chấn Dọc</div>
+<div class=formula>F_v(t) = m_player · g + m_player · a_z(t)</div>
+<div class=description>Lực dọc trục Z trong cú giao bóng. Ngưỡng Elite: max(F_v) ≈ 2.3-2.5 × BW.</div>
+<div class=tags><span class=tag>GRF</span><span class=tag>Giao bóng</span></div>
+<div class=application><strong>Ví dụ:</strong> Tay vợt 80kg đạt 2.5x BW: F_v = 80 × 9.8 × 2.5 = 1,960N ≈ 200kg lực.</div>
+</div>
+
+<div class=card>
+<h3>Serve Velocity</h3>
+<div class=vn>Vận Tốc Giao Bóng</div>
+<div class=formula>V_serve = (I_hip·ω_hip + I_shoulder·ω_shoulder + DIT) / m_player</div>
+<div class=description>Vận tốc bóng là tổng đóng góp của 3 khối: Hông (35-45%), Vai (30-35%), Tay+Vợt (20-30%).</div>
+<div class=tags><span class=tag>Giao bóng</span><span class=tag>Vận tốc</span></div>
+<div class=application><strong>Sai lầm:</strong> Người phong trào: Khối 1 (Hông) gần như không đóng góp.</div>
+</div>
+
+<div class=card>
+<h3>Return Momentum</h3>
+<div class=vn>Động Lượng Trả Bóng</div>
+<div class=formula>p_return = k_shoulder·ω_hip + K_wrist·v_incoming·cos(θ)</div>
+<div class=description>Tổng động lượng của cú trả bóng. Mượn lực từ bóng đến.</div>
+<div class=tags><span class=tag>Trả bóng</span><span class=tag>Direct Load</span></div>
+<div class=application><strong>Direct Load:</strong> Xoay vai nén 20-30° thay vì backswing 60-90cm.</div>
+</div>
+
+<div class=card>
+<h3>Volley Force</h3>
+<div class=vn>Lực Volley</div>
+<div class=formula>F_volley_out = F_ball_in + K_wall·Δx_push</div>
+<div class=description>Lực volley đầu ra = Lực bóng đến + Độ cứng "bức tường" × Khoảng đẩy vợt.</div>
+<div class=tags><span class=tag>Volley</span><span class=tag>Lưới</span></div>
+<div class=application><strong>K_wall:</strong> Độ cứng = K_wrist + độ vững vai. Δx_push = 5-15cm.</div>
+</div>
+
+<div class=card>
+<h3>Gravity Shift Multiplier</h3>
+<div class=vn>Hệ Số Trợ Lực Trọng Trường</div>
+<div class=formula>S_gravity = 1 + α · (h_drop / h_player)</div>
+<div class=description>Hệ số khuếch đại tốc độ di chuyển từ trọng lực. S_gravity=1.25: 25% năng lượng "miễn phí".</div>
+<div class=tags><span class=tag>GSM</span><span class=tag>Bộ pháp</span></div>
+<div class=application><strong>Split-Step:</strong> Nhảy 5-8cm, thả lỏng khi chạm đất, gối gập 100-110°.</div>
+</div>
+</div>
+</section>
+
+<section id="chapters">
+<h2>📚 Các Chương Trong Cẩm Nang</h2>
+
+<div class=grid>
+<div class=card>
+<h3>Chương 1: Dòng Chảy Năng Lượng Động (DET)</h3>
+<div class=description>Chuyển đổi tư duy từ "đánh bóng bằng tay" sang "truyền dẫn năng lượng toàn phần".</div>
+<div class=tags><span class=tag>DET</span><span class=tag>Nền tảng</span></div>
+<div class=application><strong>Nội dung:</strong> Mô hình 3 nguồn năng lượng, Phương trình DET Master, The 92% Rule, Cấu trúc hệ mạc.</div>
+</div>
+
+<div class=card>
+<h3>Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF)</h3>
+<div class=description>Đồng bộ hoá tín hiệu điện não với chuỗi chuyển động cơ học.</div>
+<div class=tags><span class=tag>NKF</span><span class=tag>Thần kinh</span></div>
+<div class=application><strong>Nội dung:</strong> Kiến trúc đồng bộ, σ_sync, Nhịp điệu chuỗi động lực, Khoảng trễ thần kinh-cơ.</div>
+</div>
+
+<div class=card>
+<h3>Chương 3: Vợt Trọng Lượng Nặng & Dịch Chuyển Quán Tính (DIT)</h3>
+<div class=description>Nắm vững vật lý của quán tính và va chạm.</div>
+<div class=tags><span class=tag>DIT</span><span class=tag>Vợt</span></div>
+<div class=application><strong>Nội dung:</strong> Swingweight, Chỉ số DIT, Nghệ thuật dán chì, Bảo toàn mô-men động lượng.</div>
+</div>
+
+<div class=card>
+<h3>Chương 4: Giao Bóng Bùng Nổ - Vertical Explosion (VE)</h3>
+<div class=description>Tối ưu hoá cú giao bóng bằng cách khai thác lực phản chấn từ mặt đất.</div>
+<div class=tags><span class=tag>VE</span><span class=tag>Giao bóng</span></div>
+<div class=application><strong>Nội dung:</strong> GRF, Vận tốc giao bóng, Giai đoạn nạp lò xo, Gia tốc xoay trong, Case Study: Alcaraz.</div>
+</div>
+
+<div class=card>
+<h3>Chương 5: Trả Giao Bóng - Nạp Lực Trực Tiếp (Direct Load)</h3>
+<div class=description>Chuyển hoá từ thế thủ sang thế công trong vòng 0.15 giây.</div>
+<div class=tags><span class=tag>Direct Load</span><span class=tag>Trả bóng</span></div>
+<div class=application><strong>Nội dung:</strong> Cửa sổ phản ứng, Cơ chế nạp trực tiếp, Điểm chặn tối ưu.</div>
+</div>
+
+<div class=card>
+<h3>Chương 6: Lên Lưới & Volley — Giai Đoạn Kết Thúc</h3>
+<div class=description>Biến lưới thành "vùng tử địa" bằng cách làm chủ hình học không gian.</div>
+<div class=tags><span class=tag>Volley</span><span class=tag>Lưới</span></div>
+<div class=application><strong>Nội dung:</strong> Triết lý "bức tường phản xạ", Vùng kiểm soát, Góc phản xạ, Kỹ thuật V-Step.</div>
+</div>
+
+<div class=card>
+<h3>Chương 7: Bộ Pháp & Di Chuyển — Nền Tảng Động Lực</h3>
+<div class=description>Làm chủ bộ pháp — biến trọng lực từ kẻ thù thành đồng minh.</div>
+<div class=tags><span class=tag>Bộ pháp</span><span class=tag>Di chuyển</span></div>
+<div class=application><strong>Nội dung:</strong> Triết lý di chuyển "Trầm", Hiệu suất di chuyển, GSM, DSI.</div>
+</div>
+
+<div class=card>
+<h3>Chương 8: Chiến Thuật Dựa Trên Dữ Liệu Meta</h3>
+<div class=description>Sử dụng dữ liệu và thuật toán để cá nhân hoá chiến thuật.</div>
+<div class=tags><span class=tag>Chiến thuật</span><span class=tag>Dữ liệu</span></div>
+<div class=application><strong>Nội dung:</strong> Phân tích dữ liệu, Chiến thuật cá nhân, Tối ưu hoá huấn luyện.</div>
+</div>
+
+<div class=card>
+<h3>Chương 9: Thể Lực & Hồi Phục</h3>
+<div class=description>Hiểu biết về sinh lý cơ thể để duy trì hiệu suất cao.</div>
+<div class=tags><span class=tag>Thể lực</span><span class=tag>Hồi phục</span></div>
+<div class=application><strong>Nội dung:</strong> Động cơ sinh học, Phòng ngừa chấn thương, Hồi phục tối ưu.</div>
+</div>
+
+<div class=card>
+<h3>Chương 10: Tương Lai 2026</h3>
+<div class=description>Khám phá những xu hướng và công nghệ tương lai.</div>
+<div class=tags><span class=tag>Tương lai</span><span class=tag>AI</span></div>
+<div class=application><strong>Nội dung:</strong> Siêu Agent, Trí tuệ nhân tạo, Công nghệ tương lai.</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class=calc>
+<h2>🧮 Máy Tính Sinh Cơ Học (Sắp Ra Mắt)</h2>
+<p>Chúng tôi đang phát triển các công cụ tính toán tương tác cho từng công thức.</p>
+<ul style="margin-left:20px;padding-left:20px;margin-bottom:20px;color:var(--m);line-height:1.8;">
+<li><strong>Giao diện điều chỉnh tham số trực quan</strong> cho mỗi công thức</li>
+<li><strong>Hiển thị kết quả theo thời gian thực</strong> khi bạn thay đổi các biến số</li>
+<li><strong>Biểu đồ và hình ảnh minh họa</strong> để hiểu rõ hơn các mối quan hệ</li>
+<li><strong>Giải thích chi tiết</strong> cho từng tham số và kết quả</li>
+<li><strong>Lưu trữ lịch sử tính toán</strong> để theo dõi sự tiến bộ</li>
+</ul>
+<p><em>Hãy quay lại sau để trải nghiệm!</em></p>
+</div>
+</section>
+
+<section id="network">
+<h2>🌐 Mạng Lưới Tennis Của Henry</h2>
+<p>Khám phá các dự án tennis khác của tôi</p>
+
 <div class=netgrid>
-<div class=netcard><h4>🏥 Tennis Doctor</h4><p>Trang chủ tennis hub</p><a href=https://henryphamduc.github.io/tennis-doctor/ target=_blank>Truy cập ➜</a></div>
-<div class=netcard><h4>📚 Tennis Knowledge Vault</h4><p>Kho kiến thức tennis</p><a href=https://henryphamduc.github.io/ target=_blank>Truy cập ➜</a></div>
-<div class=netcard><h4>📖 Tennis Wiki (VI)</h4><p>Bách khoa toàn thư - Tiếng Việt</p><a href=https://henryphamduc.github.io/tennis-wiki/vi/docs/ target=_blank>Truy cập ➜</a></div>
-<div class=netcard><h4>📕 Tennis Wiki (EN)</h4><p>Bách khoa toàn thư - Tiếng Anh</p><a href=https://henryphamduc.github.io/tennis-wiki/en/docs/ target=_blank>Truy cập ➜</a></div>
-<div class=netcard><h4>🔬 Tennis Future Lab</h4><p>Khung sinh cơ học + AI</p><a href=https://henryphamduc.github.io/tennis-future-lab/ target=_blank>Truy cập ➜</a></div>
-</div></section>
-<section id=c><h2><span class=b>📧</span> Liên Hệ</h2>
-<p>Email: henryphamduc@protonmail.com | GitHub: <a href=https://github.com/HenryPhamDuc target=_blank>HenryPhamDuc</a></p></section>
+<div class=netcard>
+<h4>🏥 Tennis Doctor</h4>
+<p>Trang chủ tennis hub - Nguồn tài nguyên toàn diện về tennis</p>
+<a href="https://henryphamduc.github.io/tennis-doctor/" target="_blank">Truy cập ➜</a>
+</div>
+<div class=netcard>
+<h4>📚 Tennis Knowledge Vault</h4>
+<p>Kho kiến thức tennis sâu rộng - 22 bài nghiên cứu sâu, hướng dẫn 14 phần</p>
+<a href="https://henryphamduc.github.io/" target="_blank">Truy cập ➜</a>
+</div>
+<div class=netcard>
+<h4>📖 Tennis Wiki (VI)</h4>
+<p>Bách khoa toàn thư mở về tennis hiện đại - Tiếng Việt</p>
+<a href="https://henryphamduc.github.io/tennis-wiki/vi/docs/" target="_blank">Truy cập ➜</a>
+</div>
+<div class=netcard>
+<h4>📕 Tennis Wiki (EN)</h4>
+<p>Bách khoa toàn thư mở về tennis hiện đại - Tiếng Anh</p>
+<a href="https://henryphamduc.github.io/tennis-wiki/en/docs/" target="_blank">Truy cập ➜</a>
+</div>
+<div class=netcard>
+<h4>🔬 Tennis Future Lab</h4>
+<p>Khung sinh cơ học + Trình phân tích video AI</p>
+<a href="https://henryphamduc.github.io/tennis-future-lab/" target="_blank">Truy cập ➜</a>
+</div>
+<div class=netcard>
+<h4>🤖 AI Video Analyzer</h4>
+<p>Tải video tennis lên → AI phân tích kỹ thuật của bạn so với Federer</p>
+<a href="#" target="_blank">Sắp ra mắt ➜</a>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>📧 Liên Hệ</h2>
+<p>Nếu bạn có câu hỏi, đóng góp hoặc muốn hợp tác, vui lòng liên hệ:</p>
+<p><strong>Email:</strong> henryphamduc@protonmail.com</p>
+<p><strong>GitHub:</strong> <a href="https://github.com/HenryPhamDuc" target="_blank">HenryPhamDuc</a></p>
+<p><strong>Tác giả:</strong> Henry Pham (Phạm Đức Hải) - Tennis Future Lab</p>
+</section>
+
 </div></main>
-<footer><div class=container><p><strong>Sinh Cơ Học Tennis Tương Tác</strong></p><p>10 Công Thức Cốt Lõi</p><div class=links><a href=#>Tiếng Việt</a><a href=#>English</a><a href=#>Privacy</a></div><p>&copy; 2026 Henry Pham</p></div></footer>
+<footer>
+<div class=container>
+<p><strong>Sinh Cơ Học Tennis Tương Tác</strong></p>
+<p>Cẩm Nang Tennis Hiện Đại 2026 - 10+ Công Thức Cốt Lõi</p>
+<p>Phiên bản: Advanced Synthesis Edition</p>
+<div class=links>
+<a href="#">Tiếng Việt</a>
+<a href="#">English</a>
+<a href="#">Privacy</a>
+</div>
+<p>&copy; 2026 Henry Pham. All rights reserved.</p>
+<p style="font-size:.875rem;margin-top:10px;"><em>Dựa trên cẩm nang: CAM_NANG_TENNIS_HIEN_DAI_FULL_FORMULA_2026.docx</em></p>
+</div>
+</footer>
 </body>
 </html>
