@@ -10,6 +10,21 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:sans-serif;background:var(--bg);color:var(--t);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
+/* Chapters section styling */
+#chapters{background:#f1f5f9;padding:40px 0;border-radius:12px;margin:40px 0}
+#chapters h2{text-align:center;margin-bottom:40px}
+.chapters-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1200px;margin:0 auto}
+.chapter-card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block;transition:transform .2s,box-shadow .2s}
+.chapter-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.1);background:var(--bg)}
+.chapter-card h4{font-size:1.125rem;font-weight:600;color:var(--p);margin-bottom:10px}
+.chapter-card .chapter-vn{font-size:1rem;color:var(--s);font-weight:500;margin-bottom:8px}
+.chapter-card .chapter-desc{font-size:.875rem;color:var(--m);line-height:1.6}
+.chapter-card .chapter-number{display:inline-block;width:32px;height:32px;background:var(--p);color:white;border-radius:8px;text-align:center;line-height:32px;font-weight:700;font-size:.875rem;margin-right:12px}
+.chapter-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;margin-left:8px}
+.chapter-badge.det{background:#dbeafe;color:#1d4ed8}
+.chapter-badge.nkf{background:#f3e8ff;color:#7c3aed}
+.chapter-badge.core{background:#dcfce7;color:#166534}
+.chapter-badge.advanced{background:#fef3c7;color:#92400e}
 header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:60px 0;text-align:center}
 header h1{font-size:2.5rem;font-weight:800;margin-bottom:10px}
 header p{font-size:1.25rem;opacity:.95}
@@ -639,7 +654,125 @@ footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin
 </div>
 </section>
 
-<!-- ==================== NETWORK ==================== -->
+<!-- ==================== CHAPTERS ==================== -->
+<section id="chapters">
+<h2>📚 <em>Chương Trình Học</em></h2>
+<p style="text-align:center;margin-bottom:40px;">Khám phá các chương chi tiết từ Cẩm Nang Tennis Hiện Đại 2026</p>
+
+<div class="chapters-grid">
+
+<!-- Chapter 1: DET -->
+<a href="#det" class="chapter-card">
+<span class="chapter-number">1</span>
+<h4>Dòng Chảy Năng Lượng Động (DET)</h4>
+<div class="chapter-vn">Dynamic Energy Transfer</div>
+<p class="chapter-desc">Chuyển đổi tư duy từ "đánh bóng bằng tay" sang "truyền dẫn năng lượng toàn phần" — từ lòng bàn chân đến đầu vợt.</p>
+<span class="chapter-badge det">DET</span>
+</a>
+
+<!-- Chapter 2: NKF -->
+<a href="#nkg" class="chapter-card">
+<span class="chapter-number">2</span>
+<h4>Hợp Nhất Thần Kinh - Động Lực (NKF)</h4>
+<div class="chapter-vn">Neuro-Kinetic Fusion</div>
+<p class="chapter-desc">Tích hợp thần kinh học và động lực học. Hiểu cách não bộ điều phối cơ bắp và tạo ra trạng thái "Dòng chảy".</p>
+<span class="chapter-badge nkf">NKF</span>
+</a>
+
+<!-- Chapter 3: DIT -->
+<a href="#advanced" class="chapter-card">
+<span class="chapter-number">3</span>
+<h4>Vợt Trọng Lượng Nặng & Dịch Chuyển Quán Tính (DIT)</h4>
+<div class="chapter-vn">Delay Ignition Technique</div>
+<p class="chapter-desc">Kỹ thuật thời gian trễ vàng. Tối ưu hóa chuỗi chuyển động từ hông sang vai sang vợt.</p>
+<span class="chapter-badge core">Kỹ Thuật</span>
+</a>
+
+<!-- Chapter 4: Vertical Explosion -->
+<a href="#advanced" class="chapter-card">
+<span class="chapter-number">4</span>
+<h4>Giao Bóng Bùng Nổ - Vertical Explosion (VE)</h4>
+<div class="chapter-vn">Vertical Explosion</div>
+<p class="chapter-desc">Nghệ thuật tạo lực bùng nổ từ mặt đất. Phân tích sinh cơ học của cú giao bóng mạnh mẽ.</p>
+<span class="chapter-badge core">Giao Bóng</span>
+</a>
+
+<!-- Chapter 5: Direct Load -->
+<a href="#formulas" class="chapter-card">
+<span class="chapter-number">5</span>
+<h4>Trả Giao Bóng - Nạp Lực Trực Tiếp</h4>
+<div class="chapter-vn">Direct Load Return</div>
+<p class="chapter-desc">Kỹ thuật nạp lực trực tiếp cho cú trả giao bóng. Tối ưu hóa thời điểm chạm bóng.</p>
+<span class="chapter-badge core">Trả Giao</span>
+</a>
+
+<!-- Chapter 6: Net Play -->
+<a href="#formulas" class="chapter-card">
+<span class="chapter-number">6</span>
+<h4>Lên Lưới & Volley - Giai Đoạn Kết Thúc</h4>
+<div class="chapter-vn">Net Play & Volley</div>
+<p class="chapter-desc">Chiến thuật và kỹ thuật lên lưới. Làm chủ các cú volley và smash để kết thúc điểm.</p>
+<span class="chapter-badge core">Lưới</span>
+</a>
+
+<!-- Chapter 7: Footwork -->
+<a href="#formulas" class="chapter-card">
+<span class="chapter-number">7</span>
+<h4>Bộ Pháp & Di Chuyển - Nền Tảng Động Lực</h4>
+<div class="chapter-vn">Footwork Foundation</div>
+<p class="chapter-desc">Nền tảng của mọi cú đánh. Học các bước di chuyển, vị trí và cân bằng.</p>
+<span class="chapter-badge core">Di Chuyển</span>
+</a>
+
+<!-- Chapter 8: Meta Strategy -->
+<a href="#meta" class="chapter-card">
+<span class="chapter-number">8</span>
+<h4>Chiến Thuật Dựa Trên Dữ Liệu Meta</h4>
+<div class="chapter-vn">Meta-Strategy</div>
+<p class="chapter-desc">Phân tích dữ liệu để xây dựng chiến thuật thông minh. Sử dụng xác suất, thống kê và AI.</p>
+<span class="chapter-badge advanced">Chiến Thuật</span>
+</a>
+
+<!-- Chapter 9: Fitness -->
+<a href="#fitness" class="chapter-card">
+<span class="chapter-number">9</span>
+<h4>Thể Lực & Hồi Phục - Động Cơ Sinh Học</h4>
+<div class="chapter-vn">Fitness & Recovery</div>
+<p class="chapter-desc">Hiểu về sinh học thể thao. Tối ưu hóa huấn luyện, dinh dưỡng, giấc ngủ và hồi phục.</p>
+<span class="chapter-badge advanced">Thể Lực</span>
+</a>
+
+<!-- Chapter 10: Future -->
+<a href="#future" class="chapter-card">
+<span class="chapter-number">10</span>
+<h4>Tương Lai 2026 - Kỷ Nguyên Siêu Agent</h4>
+<div class="chapter-vn">Future 2026</div>
+<p class="chapter-desc">Khám phá tương lai của tennis với AI, dữ liệu và công nghệ. Xây dựng lộ trình cá nhân hóa.</p>
+<span class="chapter-badge advanced">Tương Lai</span>
+</a>
+
+<!-- Chapter 11: Micro-Biomechanics -->
+<a href="#micro" class="chapter-card">
+<span class="chapter-number">11</span>
+<h4>Chi Tiết Động Cơ Siêu Vi</h4>
+<div class="chapter-vn">Micro-Biomechanics</div>
+<p class="chapter-desc">Đi sâu vào chi tiết vi mô. Phân tích cơ học đòn bẩy, khớp, hệ mạc.</p>
+<span class="chapter-badge advanced">Siêu Vi</span>
+</a>
+
+<!-- Chapter 12: Vision -->
+<a href="#future" class="chapter-card">
+<span class="chapter-number">12</span>
+<h4>Tầm Nhìn Tương Lai & Hệ Sinh Thái Siêu Agent</h4>
+<div class="chapter-vn">Future Vision</div>
+<p class="chapter-desc">Tầm nhìn toàn diện về tương lai tennis. Xây dựng hệ sinh thái AI, công nghệ và cộng đồng.</p>
+<span class="chapter-badge advanced">Tầm Nhìn</span>
+</a>
+
+</div>
+</section>
+
+
 <section id="network">
 <h2>🌐 <em>Mạng Lưới Tennis Của Henry</em></h2>
 <p style="text-align:center;margin-bottom:30px;">Khám phá các dự án tennis khác của tôi</p>
