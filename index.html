@@ -11,20 +11,21 @@
 body{font-family:sans-serif;background:var(--bg);color:var(--t);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
 /* Chapters section styling */
-#chapters{background:#f1f5f9;padding:40px 0;border-radius:12px;margin:40px 0}
+#chapters{background:#f1f5f9;padding:40px 20px;border-radius:12px;margin:40px 0}
 #chapters h2{text-align:center;margin-bottom:40px}
 .chapters-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1200px;margin:0 auto}
 .chapter-card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block;transition:transform .2s,box-shadow .2s}
 .chapter-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.1);background:var(--bg)}
 .chapter-card h4{font-size:1.125rem;font-weight:600;color:var(--p);margin-bottom:10px}
 .chapter-card .chapter-vn{font-size:1rem;color:var(--s);font-weight:500;margin-bottom:8px}
-.chapter-card .chapter-desc{font-size:.875rem;color:var(--m);line-height:1.6}
-.chapter-card .chapter-number{display:inline-block;width:32px;height:32px;background:var(--p);color:white;border-radius:8px;text-align:center;line-height:32px;font-weight:700;font-size:.875rem;margin-right:12px}
-.chapter-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;margin-left:8px}
+.chapter-card .chapter-desc{font-size:.875rem;color:var(--m);line-height:1.6;margin-bottom:12px}
+.chapter-card .chapter-number{display:inline-block;width:32px;height:32px;background:var(--p);color:white;border-radius:8px;text-align:center;line-height:32px;font-weight:700;font-size:.875rem;margin-right:12px;vertical-align:middle}
+.chapter-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;margin-left:8px;vertical-align:middle}
 .chapter-badge.det{background:#dbeafe;color:#1d4ed8}
 .chapter-badge.nkf{background:#f3e8ff;color:#7c3aed}
 .chapter-badge.core{background:#dcfce7;color:#166534}
 .chapter-badge.advanced{background:#fef3c7;color:#92400e}
+
 header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:60px 0;text-align:center}
 header h1{font-size:2.5rem;font-weight:800;margin-bottom:10px}
 header p{font-size:1.25rem;opacity:.95}
@@ -771,7 +772,6 @@ footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin
 
 </div>
 </section>
-
 
 <section id="network">
 <h2>🌐 <em>Mạng Lưới Tennis Của Henry</em></h2>
