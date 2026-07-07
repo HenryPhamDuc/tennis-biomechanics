@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF)</title>
+<meta name="description" content="Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF) - Đồng bộ hoá tín hiệu điện não với chuỗi chuyển động cơ học">
+<style>
+:root{--p:#2563eb;--s:#7c3aed;--bg:#f8fafc;--c:#fff;--t:#1e293b;--m:#64748b;--b:#e2e8f0;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:sans-serif;background:var(--bg);color:var(--t);line-height:1.8}
+.container{max-width:900px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:40px 0;text-align:center}
+header h1{font-size:1.8rem;font-weight:800;margin-bottom:10px}
+nav{background:var(--c);border-bottom:1px solid var(--b);padding:15px 0;position:sticky;top:0;z-index:100}
+nav .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+nav .back{font-weight:600;color:var(--p);text-decoration:none}
+main{padding:40px 0}
+section{margin-bottom:40px}
+section h2{font-size:1.5rem;font-weight:700;margin-bottom:16px;color:var(--p)}
+section h3{font-size:1.25rem;font-weight:600;margin:24px 0 12px 0;color:var(--p)}
+.formula{background:#f1f5f9;padding:12px;border-radius:8px;margin:12px 0;font-family:monospace;font-size:1.125rem;text-align:center;overflow-x:auto}
+.table-container{overflow-x:auto;margin:16px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0}
+th,td{padding:10px;border:1px solid var(--b);text-align:left}
+th{background:#f8fafc;font-weight:600;color:var(--p)}
+tr:nth-child(even){background:#f8fafc}
+.tip{background:#f3e8ff;padding:12px;border-radius:8px;margin:16px 0;font-size:.9375rem}
+.tip strong{color:#7c3aed}
+.footer-nav{display:flex;justify-content:space-between;align-items:center;margin-top:40px;padding-top:20px;border-top:1px solid var(--b)}
+.footer-nav a{padding:8px 16px;background:var(--c);border:1px solid var(--b);border-radius:6px;text-decoration:none;color:var(--t);font-weight:500}
+.footer-nav a:hover{background:var(--s);color:white}
+@media(max-width:768px){header h1{font-size:1.4rem}nav .container{flex-direction:column;gap:10px}.footer-nav{flex-direction:column;gap:10px}}
+</style>
+</head>
+<body>
+<header><div class=container>
+<h1>🧠 Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF)</h1>
+<p><strong>Cẩm Nang Tennis Hiện Đại 2026</strong></p>
+</div></header>
+<nav><div class=container>
+<a href="../" class=back>← Về Trang Chủ</a>
+<span>Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF)</span>
+</div></nav>
+<main><div class=container>
+
+<p style="font-size:1.125rem;font-weight:600;color:#7c3aed;margin-bottom:20px;">
+Mục tiêu chương: Đồng bộ hoá tín hiệu điện não với chuỗi chuyển động cơ học để đạt trạng thái "Dòng Chảy" — nơi mọi cú đánh cảm thấy dễ dàng nhưng kết quả vượt trội.
+</p>
+
+<h2>2.1. Kiến Trúc Của Sự Đồng Bộ</h2>
+<p>Trong tennis, sức mạnh không đến từ việc cơ bắp to lớn, mà đến từ việc các nhóm cơ co lại đúng thời điểm. NKF là thước đo khả năng não bộ điều khiển "dàn nhạc cơ thể" — mỗi nhóm cơ là một nhạc cụ, và não bộ là người nhạc trưởng.</p>
+<p>Khi các nhóm cơ hoạt động rời rạc (không đồng bộ), năng lượng bị triệt tiêu lẫn nhau. Khi chúng hoạt động theo chuỗi hoàn hảo — Chân → Hông → Vai → Tay — mỗi mắt xích "bắt kịp" làn sóng năng lượng từ mắt xích trước và khuếch đại thêm.</p>
+
+<h2>2.2. Phương Trình Đồng Bộ Hoá Tổng Thể</h2>
+<p><strong>Chỉ Số Đồng Bộ NKF (Sigma Synchronization):</strong></p>
+<div class=formula>σ_sync = [1 / N(N-1)] · ∑[i ≠ j] Corr(N_i(t), N_j(t))</div>
+<p>Trong đó N là số mắt xích (bàn chân, đùi, hông, thân, vai, cánh tay, cổ tay). Corr là hệ số tương quan theo thời gian giữa tín hiệu của cặp mắt xích i và j.</p>
+
+<h3>2.2.1. Diễn Giải Thực Tế</h3>
+<table>
+<tr><th>Giá trị σ_sync</th><th>Trạng thái</th><th>Cảm giác</th><th>Hiệu suất</th></tr>
+<tr><td>&lt; 0.70</td><td>Rời rạc</td><td>Cứng, mệt mỏi</td><td>&lt; 60%</td></tr>
+<tr><td>0.70 - 0.79</td><td>Trung bình</td><td>Đôi khi "ăn bóng"</td><td>60-75%</td></tr>
+<tr><td>0.80 - 0.91</td><td>Tốt</td><td>Chơi ổn định</td><td>75-90%</td></tr>
+<tr><td>&gt;= 0.92</td><td>Flow State</td><td>"Đánh như không đánh"</td><td>&gt; 90%</td></tr>
+</table>
+
+<div class=tip>
+✨ Ở mức σ_sync ≥ 0.92, vận động viên đạt trạng thái NKF chuẩn: hệ số rò rỉ năng lượng gần bằng 0, cú đánh cực nhẹ nhàng nhưng bóng bay cực mạnh.
+</div>
+
+<h2>2.3. Nhịp Điệu Của Chuỗi Động Lực</h2>
+<div class=formula>F_total(t) = ∑[k=1→K] A_k · exp(-(t - t_{k,i})² / (2 · σ_k²))</div>
+<p>Mỗi đường cong Gaussian đại diện cho một nhóm cơ: A_k là biên độ lực, t_{k,i} là thời điểm đạt đỉnh, σ_k là độ lan tỏa.</p>
+
+<h3>2.3.1. Ý Nghĩa Của Từng Biến Số</h3>
+<ul>
+<li><strong>A_k (Biên độ):</strong> Khả năng phát lực tối đa của nhóm cơ k</li>
+<li><strong>t_{k,i} (Thời điểm đỉnh):</strong> Biến số sinh tử. Nếu hông xoay quá sớm, ngọn sóng của nó qua rồi khi vai bắt đầu, sẽ mất kết nối, giảm 25-30% lực tổng.</li>
+<li><strong>σ_k (Độ lan tỏa):</strong> Cơ lớn có σ lớn (co-duỗi chậm, bền). Cổ tay có σ nhỏ (co-duỗi chớp nhoáng).</li>
+</ul>
+<p><strong>Cú đánh lý tưởng</strong> xảy ra khi các đường cong Gaussian cộng dồn thành một đỉnh nhọn duy nhất ngay tại thời điểm mặt vợt chạm bóng (t_impact) — gọi là "Cộng hưởng tối ưu".</p>
+
+<h2>2.4. Tốc Độ Xử Lý Thần Kinh</h2>
+<div class=formula>V_neural = D / T</div>
+<p>Tốc độ truyền tín hiệu thần kinh. D: Khoảng cách; T: Thời gian truyền.</p>
+
+<h3>2.4.1. Thời Gian Phản Ứng Thuần</h3>
+<div class=formula>RT_pure = t_stimulus → t_muscle_activation</div>
+<p>Thời gian từ khi nhận kích thích (thị giác) đến khi cơ bắp bắt đầu hoạt động.</p>
+<ul>
+<li><strong>Tay vợt nghiệp dư:</strong> RT_pure = 180-220ms</li>
+<li><strong>Tay vợt chuyên nghiệp:</strong> RT_pure = 120-150ms</li>
+<li><strong>Tay vợt Elite:</strong> RT_pure = 100-120ms</li>
+</ul>
+
+<h2>2.5. Bài Tập Tăng Cường NKF</h2>
+<table>
+<tr><th>Bài tập</th><th>Mục đích</th><th>Thực hiện</th></tr>
+<tr><td><strong>Rhythm Drill</strong></td><td>Đồng bộ chân-hông-vai</td><td>Đánh bóng với nhịp đếm: "1-chân, 2-hông, 3-vai, 4-tay"</td></tr>
+<tr><td><strong>Mirror Drill</strong></td><td>Kiểm soát timing</td><td>Đánh bóng trước gương, quan sát chuỗi chuyển động</td></tr>
+<tr><td><strong>Metronome Training</strong></td><td>Tạo nhịp điệu ổn định</td><td>Đánh bóng theo nhịp metronome (60-90 BPM)</td></tr>
+<tr><td><strong>Shadow Swing</strong></td><td>Cảm nhận dòng chảy</td><td>Vung vợt không bóng, tập trung vào sự trôi chảy</td></tr>
+</table>
+
+</div></main>
+<footer>
+<div class=container>
+<div class=footer-nav>
+<a href="../">← Về Trang Chủ</a>
+<span>Chương 2 / 12</span>
+<a href="../#chapters">↑ Về Mục Lục</a>
+</div>
+<p style="text-align:center;margin-top:20px;color:var(--m);">&copy; 2026 Henry Pham. All rights reserved.</p>
+</div>
+</footer>
+</body>
+</html>
