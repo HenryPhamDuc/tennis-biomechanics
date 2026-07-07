@@ -10,21 +10,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:sans-serif;background:var(--bg);color:var(--t);line-height:1.6}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
-/* Chapters section styling */
-#chapters{background:#f1f5f9;padding:40px 20px;border-radius:12px;margin:40px 0}
-#chapters h2{text-align:center;margin-bottom:40px}
-.chapters-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1200px;margin:0 auto}
-.chapter-card{background:var(--c);border:1px solid var(--b);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block;transition:transform .2s,box-shadow .2s;cursor:pointer}
-.chapter-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.1);background:var(--bg)}
-.chapter-card h4{font-size:1.125rem;font-weight:600;color:var(--p);margin-bottom:10px}
-.chapter-card .chapter-vn{font-size:1rem;color:var(--s);font-weight:500;margin-bottom:8px}
-.chapter-card .chapter-desc{font-size:.875rem;color:var(--m);line-height:1.6;margin-bottom:12px}
-.chapter-card .chapter-number{display:inline-block;width:32px;height:32px;background:var(--p);color:white;border-radius:8px;text-align:center;line-height:32px;font-weight:700;font-size:.875rem;margin-right:12px;vertical-align:middle}
-.chapter-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:.75rem;font-weight:600;margin-left:8px;vertical-align:middle}
-.chapter-badge.det{background:#dbeafe;color:#1d4ed8}
-.chapter-badge.nkf{background:#f3e8ff;color:#7c3aed}
-.chapter-badge.core{background:#dcfce7;color:#166534}
-.chapter-badge.advanced{background:#fef3c7;color:#92400e}
+/* Chapters section styling - removed per user request */
 
 header{background:linear-gradient(135deg,var(--p),var(--s));color:#fff;padding:60px 0;text-align:center}
 header h1{font-size:2.5rem;font-weight:800;margin-bottom:10px}
@@ -76,7 +62,6 @@ footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin
 <a href="#meta">🎯 Meta-Strategy</a>
 <a href="#fitness">💪 Thể Lực</a>
 <a href="#future">🚀 Tương Lai</a>
-<a href="#chapters">📚 Chương</a>
 <a href="#network">🌐 Mạng Lưới</a>
 
 <a href="#contact">📧 Liên Hệ</a>
@@ -390,97 +375,6 @@ footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin
 </div>
 </section>
 
-<!-- ==================== CHAPTERS ==================== -->
-<section id="chapters">
-<h2>📚 <em>Các Chương Trong Cẩm Nang</em></h2>
-
-<div class=grid>
-<div class=card>
-<h3>Chương 1: Dòng Chảy Năng Lượng Động (DET)</h3>
-<div class=description>Chuyển đổi tư duy từ "đánh bóng bằng tay" sang "truyền dẫn năng lượng toàn phần". Mô hình 3 nguồn năng lượng, Phương trình DET Master, The 92% Rule, Cấu trúc hệ mạc.</div>
-<div class=tags><span class=tag>DET</span><span class=tag>Nền tảng</span><span class=tag>Bắt buộc</span></div>
-<div class=application><strong>Nội dung chính:</strong> Ba kênh năng lượng, tích phân DET, hiệu suất truyền tải, hệ mạc biotensegrity.</div>
-</div>
-
-<div class=card>
-<h3>Chương 2: Hợp Nhất Thần Kinh - Động Lực (NKF)</h3>
-<div class=description>Đồng bộ hoá tín hiệu điện não với chuỗi chuyển động cơ học. Kiến trúc đồng bộ, Chỉ số đồng bộ thần kinh-động lực.</div>
-<div class=tags><span class=tag>NKF</span><span class=tag>Thần kinh</span><span class=tag>Nền tảng</span></div>
-<div class=application><strong>Nội dung chính:</strong> σ_sync, Nhịp điệu chuỗi động lực, Khoảng trễ điện-cơ, Gia tốc xoay trong.</div>
-</div>
-
-<div class=card>
-<h3>Chương 3: Vợt Trọng Lượng Nặng & Dịch Chuyển Quán Tính (DIT)</h3>
-<div class=description>Nắm vững vật lý của quán tính và va chạm. Swingweight, Chỉ số DIT, Nghệ thuật dán chì, Bảo toàn mô-men động lượng.</div>
-<div class=tags><span class=tag>DIT</span><span class=tag>Vợt</span><span class=tag>Vật lý</span></div>
-<div class=application><strong>Nội dung chính:</strong> I_racket, DIT Index, Swingweight, Mô-men quán tính, Dán chì tối ưu.</div>
-</div>
-
-<div class=card>
-<h3>Chương 4: Giao Bóng Bùng Nổ - Vertical Explosion (VE)</h3>
-<div class=description>Tối ưu hoá cú giao bóng bằng cách khai thác lực phản chấn từ mặt đất. GRF, Vận tốc giao bóng, Giai đoạn nạp lò xo.</div>
-<div class=tags><span class=tag>VE</span><span class=tag>Giao bóng</span><span class=tag>Nâng cao</span></div>
-<div class=application><strong>Nội dung chính:</strong> F_v(t), V_serve, Gia tốc xoay trong, Case Study: Alcaraz.</div>
-</div>
-
-<div class=card>
-<h3>Chương 5: Trả Giao Bóng - Nạp Lực Trực Tiếp (Direct Load)</h3>
-<div class=description>Chuyển hoá từ thế thủ sang thế công trong vòng 0.15 giây. Cửa sổ phản ứng, Cơ chế nạp trực tiếp, Điểm chặn tối ưu.</div>
-<div class=tags><span class=tag>Direct Load</span><span class=tag>Trả bóng</span><span class=tag>Nâng cao</span></div>
-<div class=application><strong>Nội dung chính:</strong> p_return, Thời gian phản ứng, Kỹ thuật nạp trực tiếp.</div>
-</div>
-
-<div class=card>
-<h3>Chương 6: Lên Lưới & Volley — Giai Đoạn Kết Thúc</h3>
-<div class=description>Biến lưới thành "vùng tử địa" bằng cách làm chủ hình học không gian. Triết lý "bức tường phản xạ", Vùng kiểm soát, Góc phản xạ.</div>
-<div class=tags><span class=tag>Volley</span><span class=tag>Lưới</span><span class=tag>Nâng cao</span></div>
-<div class=application><strong>Nội dung chính:</strong> F_volley, Kỹ thuật V-Step, Góc phản xạ volley.</div>
-</div>
-
-<div class=card>
-<h3>Chương 7: Bộ Pháp & Di Chuyển — Nền Tảng Động Lực</h3>
-<div class=description>Làm chủ bộ pháp — biến trọng lực từ kẻ thù thành đồng minh. Triết lý di chuyển "Trầm", Hiệu suất di chuyển, GSM, DSI.</div>
-<div class=tags><span class=tag>Bộ pháp</span><span class=tag>Di chuyển</span><span class=tag>Nền tảng</span></div>
-<div class=application><strong>Nội dung chính:</strong> Perf_move, Dynamic Stability Index, Gravity Shift Multiplier, Kỹ thuật trượt.</div>
-</div>
-
-<div class=card>
-<h3>Chương 8: Chiến Thuật Dựa Trên Dữ Liệu Meta</h3>
-<div class=description>Sử dụng dữ liệu và thuật toán để cá nhân hoá chiến thuật. Phân tích điểm yếu đối thủ, Quản lý điểm số quan trọng.</div>
-<div class=tags><span class=tag>Chiến thuật</span><span class=tag>Dữ liệu</span><span class=tag>Nâng cao</span></div>
-<div class=application><strong>Nội dung chính:</strong> P_error(x,y), Shot_IQ, P_error_opponent, Leverage Points.</div>
-</div>
-
-<div class=card>
-<h3>Chương 9: Thể Lực & Hồi Phục — Động Cơ Sinh Học</h3>
-<div class=description>Hiểu biết về sinh lý cơ thể để duy trì hiệu suất cao. Quản trị "động cơ sinh học", Biến thiên nhịp tim, Dinh dưỡng theo pha.</div>
-<div class=tags><span class=tag>Thể lực</span><span class=tag>Hồi phục</span><span class=tag>Sức khoẻ</span></div>
-<div class=application><strong>Nội dung chính:</strong> Readiness Score, HRV, Neuro-Reset 16 giây, Chiến lược dinh dưỡng.</div>
-</div>
-
-<div class=card>
-<h3>Chương 10: Tương Lai 2026 — Kỷ Nguyên Siêu Agent</h3>
-<div class=description>Khám phá những xu hướng và công nghệ tương lai. Thu thập dữ liệu đa chiều, Cấu hình siêu agent, Digital Twin.</div>
-<div class=tags><span class=tag>AI</span><span class=tag>Tương lai</span><span class=tag>Công nghệ</span></div>
-<div class=application><strong>Nội dung chính:</strong> Performance_hybrid, Data_total, DET Analyzer Agent, Strategy Meta Agent.</div>
-</div>
-
-<div class=card>
-<h3>Chương 11: Chi Tiết Động Cơ Siêu Vi (Micro-Biomechanics)</h3>
-<div class=description>Khám phá các chuyển động ở cấp độ mili-giây và mili-mét. Cơ học đòn bẩy, Bóng nặng, Độ cứng đàn hồi hệ mạc.</div>
-<div class=tags><span class=tag>Micro</span><span class=tag>Chi tiết</span><span class=tag>Nâng cao</span></div>
-<div class=application><strong>Nội dung chính:</strong> L_lever, τ = F×L_lever, A_heavy, E_elastic, k_fascia.</div>
-</div>
-
-<div class=card>
-<h3>Chương 12: Tầm Nhìn Tương Lai & Hệ Sinh Thái Siêu Agent</h3>
-<div class=description>Thiết lập lộ trình tiến hoá dài hạn cho vận động viên Hybrid. Ba giai đoạn tiến hoá, Phương trình tổng thể hiệu suất.</div>
-<div class=tags><span class=tag>Tầm nhìn</span><span class=tag>Hệ sinh thái</span><span class=tag>Tương lai</span></div>
-<div class=application><strong>Nội dung chính:</strong> 3 giai đoạn (Số hoá, Cộng sinh, Làm chủ), Master Performance Equation, Lộ trình 12 tháng.</div>
-</div>
-</div>
-</section>
-
 <!-- ==================== MICRO-BIOMECHANICS ==================== -->
 <section id="micro">
 <h2>🔬 <em>Chi Tiết Động Cơ Siêu Vi (Micro-Biomechanics)</em></h2>
@@ -652,123 +546,6 @@ footer .links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin
 <div class=tags><span class=tag>Future</span><span class=tag>Kết quả</span><span class=tag>Tích số</span></div>
 <div class=application><strong>Lộ trình 12 tháng:</strong> <strong>Tháng 1-2:</strong> Baseline đo lường. <strong>Tháng 3-4:</strong> DET & NKF cơ bản. <strong>Tháng 5-6:</strong> DIT & GRF. <strong>Tháng 7-8:</strong> DSI & Footwork. <strong>Tháng 9-10:</strong> Meta Strategy. <strong>Tháng 11-12:</strong> Tích hợp toàn bộ.</div>
 </div>
-</div>
-</section>
-
-<!-- ==================== CHAPTERS ==================== -->
-<section id="chapters">
-<h2>📚 <em>Chương Trình Học</em></h2>
-<p style="text-align:center;margin-bottom:40px;">Khám phá các chương chi tiết từ Cẩm Nang Tennis Hiện Đại 2026</p>
-
-<div class="chapters-grid">
-
-<a href="manual/1.html" class="chapter-card" title="Đọc Chương 1">
-<span class="chapter-number">1</span>
-<h4>Dòng Chảy Năng Lượng Động (DET)</h4>
-<div class="chapter-vn">Dynamic Energy Transfer</div>
-<p class="chapter-desc">Chuyển đổi tư duy từ "đánh bóng bằng tay" sang "truyền dẫn năng lượng toàn phần" — từ lòng bàn chân đến đầu vợt.</p>
-<span class="chapter-badge det">DET</span>
-</a>
-
-<!-- Chapter 2: NKF -->
-<a href="manual/2.html" class="chapter-card" title="Đọc Chương 2">
-<span class="chapter-number">2</span>
-<h4>Hợp Nhất Thần Kinh - Động Lực (NKF)</h4>
-<div class="chapter-vn">Neuro-Kinetic Fusion</div>
-<p class="chapter-desc">Tích hợp thần kinh học và động lực học. Hiểu cách não bộ điều phối cơ bắp và tạo ra trạng thái "Dòng chảy".</p>
-<span class="chapter-badge nkf">NKF</span>
-</a>
-
-<!-- Chapter 3: DIT -->
-<a href="manual/3.html" class="chapter-card" title="Đọc Chương 3">
-<span class="chapter-number">3</span>
-<h4>Vợt Trọng Lượng Nặng & Dịch Chuyển Quán Tính (DIT)</h4>
-<div class="chapter-vn">Delay Ignition Technique</div>
-<p class="chapter-desc">Kỹ thuật thời gian trễ vàng. Tối ưu hóa chuỗi chuyển động từ hông sang vai sang vợt.</p>
-<span class="chapter-badge core">Kỹ Thuật</span>
-</a>
-
-<!-- Chapter 4: Vertical Explosion -->
-<a href="manual/4.html" class="chapter-card" title="Đọc Chương 4">
-<span class="chapter-number">4</span>
-<h4>Giao Bóng Bùng Nổ - Vertical Explosion (VE)</h4>
-<div class="chapter-vn">Vertical Explosion</div>
-<p class="chapter-desc">Nghệ thuật tạo lực bùng nổ từ mặt đất. Phân tích sinh cơ học của cú giao bóng mạnh mẽ.</p>
-<span class="chapter-badge core">Giao Bóng</span>
-</a>
-
-<!-- Chapter 5: Direct Load -->
-<a href="manual/5.html" class="chapter-card" title="Đọc Chương 5">
-<span class="chapter-number">5</span>
-<h4>Trả Giao Bóng - Nạp Lực Trực Tiếp</h4>
-<div class="chapter-vn">Direct Load Return</div>
-<p class="chapter-desc">Kỹ thuật nạp lực trực tiếp cho cú trả giao bóng. Tối ưu hóa thời điểm chạm bóng.</p>
-<span class="chapter-badge core">Trả Giao</span>
-</a>
-
-<!-- Chapter 6: Net Play -->
-<a href="manual/6.html" class="chapter-card" title="Đọc Chương 6">
-<span class="chapter-number">6</span>
-<h4>Lên Lưới & Volley - Giai Đoạn Kết Thúc</h4>
-<div class="chapter-vn">Net Play & Volley</div>
-<p class="chapter-desc">Chiến thuật và kỹ thuật lên lưới. Làm chủ các cú volley và smash để kết thúc điểm.</p>
-<span class="chapter-badge core">Lưới</span>
-</a>
-
-<!-- Chapter 7: Footwork -->
-<a href="manual/7.html" class="chapter-card" title="Đọc Chương 7">
-<span class="chapter-number">7</span>
-<h4>Bộ Pháp & Di Chuyển - Nền Tảng Động Lực</h4>
-<div class="chapter-vn">Footwork Foundation</div>
-<p class="chapter-desc">Nền tảng của mọi cú đánh. Học các bước di chuyển, vị trí và cân bằng.</p>
-<span class="chapter-badge core">Di Chuyển</span>
-</a>
-
-<!-- Chapter 8: Meta Strategy -->
-<a href="manual/8.html" class="chapter-card" title="Đọc Chương 8">
-<span class="chapter-number">8</span>
-<h4>Chiến Thuật Dựa Trên Dữ Liệu Meta</h4>
-<div class="chapter-vn">Meta-Strategy</div>
-<p class="chapter-desc">Phân tích dữ liệu để xây dựng chiến thuật thông minh. Sử dụng xác suất, thống kê và AI.</p>
-<span class="chapter-badge advanced">Chiến Thuật</span>
-</a>
-
-<!-- Chapter 9: Fitness -->
-<a href="manual/9.html" class="chapter-card" title="Đọc Chương 9">
-<span class="chapter-number">9</span>
-<h4>Thể Lực & Hồi Phục - Động Cơ Sinh Học</h4>
-<div class="chapter-vn">Fitness & Recovery</div>
-<p class="chapter-desc">Hiểu về sinh học thể thao. Tối ưu hóa huấn luyện, dinh dưỡng, giấc ngủ và hồi phục.</p>
-<span class="chapter-badge advanced">Thể Lực</span>
-</a>
-
-<!-- Chapter 10: Future -->
-<a href="manual/10.html" class="chapter-card" title="Đọc Chương 10">
-<span class="chapter-number">10</span>
-<h4>Tương Lai 2026 - Kỷ Nguyên Siêu Agent</h4>
-<div class="chapter-vn">Future 2026</div>
-<p class="chapter-desc">Khám phá tương lai của tennis với AI, dữ liệu và công nghệ. Xây dựng lộ trình cá nhân hóa.</p>
-<span class="chapter-badge advanced">Tương Lai</span>
-</a>
-
-<!-- Chapter 11: Micro-Biomechanics -->
-<a href="manual/11.html" class="chapter-card" title="Đọc Chương 11">
-<span class="chapter-number">11</span>
-<h4>Chi Tiết Động Cơ Siêu Vi</h4>
-<div class="chapter-vn">Micro-Biomechanics</div>
-<p class="chapter-desc">Đi sâu vào chi tiết vi mô. Phân tích cơ học đòn bẩy, khớp, hệ mạc.</p>
-<span class="chapter-badge advanced">Siêu Vi</span>
-</a>
-
-<!-- Chapter 12: Vision -->
-<a href="manual/12.html" class="chapter-card" title="Đọc Chương 12">
-<span class="chapter-number">12</span>
-<h4>Tầm Nhìn Tương Lai & Hệ Sinh Thái Siêu Agent</h4>
-<div class="chapter-vn">Future Vision</div>
-<p class="chapter-desc">Tầm nhìn toàn diện về tương lai tennis. Xây dựng hệ sinh thái AI, công nghệ và cộng đồng.</p>
-<span class="chapter-badge advanced">Tầm Nhìn</span>
-</a>
-
 </div>
 </section>
 
