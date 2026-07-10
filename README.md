@@ -19,7 +19,7 @@ This is an interactive web application that provides 10 core biomechanical formu
 
 ## Deployment
 
-This site is deployed to GitHub Pages at: https://henryphamduc.github.io/biomechanics/
+This site is deployed to GitHub Pages at: https://henryphamduc.github.io/tennis-biomechanics/
 
 ## Usage
 
@@ -35,3 +35,4 @@ Each formula includes:
 - Static site hosted on GitHub Pages
 - Responsive design for all devices
 - Vietnamese language support
+
